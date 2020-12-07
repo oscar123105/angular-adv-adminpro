@@ -1,14 +1,13 @@
-import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-import { AuthModule } from './auth/auth.module';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-//Modulos
+// Modulos
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
 
 import { AppComponent } from './app.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 
 
@@ -16,14 +15,14 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,  
-    NopagefoundComponent,  
+    AppComponent,
+    NopagefoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule,
+    AuthModule
   ],
   bootstrap: [AppComponent]
 })
